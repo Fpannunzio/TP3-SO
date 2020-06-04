@@ -9,6 +9,7 @@
 #include <unistd.h>
 #include <sys/stat.h>
 #include <fcntl.h>
+#include <time.h>
 
 #define ADDRESS "0.0.0.0"
 #define PORT 8080
@@ -20,6 +21,7 @@ void gdbme(void);
 void quineCheck(void);
 void printStream(FILE * stream);
 void printLogo(void);
+void printMixedFdsStep6(void);
 
 void step0(void);
 void step1(void);
@@ -42,7 +44,7 @@ int main(int argc , char *argv[])
     size_t client_message_size;
     FILE * stream;
 
-    void (*steps[STEP_COUNT])(void) = {step0, step1, step2, step3, step4, step5, step6, step7, step8, step9, step10}; 
+    void (*steps[STEP_COUNT])(void) = {step0, step1, step2, step3, step4, step5, step6, step7, step8, step9, step10};
     char * stepAns[STEP_COUNT] = {"entendido\n", "0854780\n", "martin luther king\n", "es_go_lo_dro_bo\n", "too_easy\n", ".RUN_ME\n",
             "in_de_ter_mi_na_do\n", "thunder thunder thunder thundercats\n", "this is awesome\n", "chin_chu_lan_cha\n", "gdb_manda\n"};
 	
@@ -153,6 +155,24 @@ void freeResources(int sock, int client_sock, FILE * stream, char * client_messa
     free(client_message);
 }
 
+void printMixedFdsStep6(void){
+    char * m = "La respuesta es in_de_ter_mi_na_do\n";
+
+    srand(time(NULL));
+
+    while(*m){
+
+        if(!(rand() % 5)){
+            // Print a character of m to stdin
+            fputc(*m++, stdout);
+            fflush(stdout);
+
+        } else
+            // Print random ascii character to stderr
+            fputc((rand() % (126 - 32)) + 32, stderr); // 32 = ' ', 126 = ~; Min and max ascii we support
+    }
+}
+
 void quineCheck(void){
 
     FILE * popenStream;
@@ -233,7 +253,6 @@ void step2(void){
     printf("\302\277El puerto que usaron para conectarse al server es el mismo que usan para mandar las respuestas? \302\277Por qu\303\251?\n\n");
 }
 
-// Falta hacer los writes alternantes
 void step3(void){
     printf("EBADF...\n\n");
 
@@ -258,9 +277,11 @@ void step5(void){
     printf("Un servidor suele crear un nuevo proceso o thread para atender las conexiones entrantes. \302\277Qu\303\251 conviene m\303\241s?\n\n");
 }
 
-
 void step6(void){
     printf("mixed fds\n\n");
+
+    printMixedFdsStep6();
+
     puts("\n----- PREGUNTA PARA INVESTIGAR -----");
     printf("\302\277C\303\263mo se puede implementar un servidor que atienda muchas conexiones sin usar procesos ni threads?");        
 }
@@ -276,7 +297,6 @@ void step8(void){
     printf("Tango Hotel India Sierra India Sierra Alfa Whiskey Echo Sierra Oscar Mike Echo\n\n");
     puts("\n----- PREGUNTA PARA INVESTIGAR -----");
     printf("sockets es un mecanismo de IPC. \302\277Qu\303\251 es m\303\241s eficiente entre sockets y pipes?");
-    
 }
 
 void step9(void){

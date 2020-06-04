@@ -1,0 +1,1421 @@
+root@dd68fd2f1173:~# ltrace ./server
+__libc_start_main(0x401082, 1, 0x7ffe7faf5888, 0x401e70 <unfinished ...>
+setvbuf(0x7f24f81c12a0, 0, 2, 0)                                                                                              = 0
+setvbuf(0x7f24f81c1060, 0, 2, 0)                                                                                              = 0
+socket(2, 1, 0)                                                                                                               = 3
+setsockopt(3, 1, 15, 0x7ffe7faf5354)                                                                                          = 0
+bzero(0x7ffe7faf5340, 16)                                                                                                     = <void>
+htonl(0, 16, 16, 0)                                                                                                           = 0
+htons(8080, 16, 16, 0)                                                                                                        = 0x901f
+bind(3, 0x7ffe7faf5340, 16, 0x7ffe7faf5340)                                                                                   = 0
+listen(3, 5, 16, 0x7f24f7f04317)                                                                                              = 0
+accept(3, 0x7ffe7faf5330, 0x7ffe7faf5350, 0x7ffe7faf5330)                                                                     = 4
+fdopen(4, 0x4020e4, 0x7ffe7faf5350, 0x7f24f7f042c0)                                                                           = 0x16d3010
+printf("\033[1;1H\033[2J"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+)                                                                                                    = 10
+puts("------------- DESAFIO ----------"...------------- DESAFIO -------------
+)                                                                                   = 36
+printf("%s\n\n", "Bienvenidos al TP3 y felicitacio"...Bienvenidos al TP3 y felicitaciones, ya resolvieron el primer acertijo.
+
+En este TP deberán finalizar el juego que ya comenzaron resolviendo los desafíos de cada nivel.
+Además tendrán que investigar otras preguntas para responder durante la defensa.
+El desafío final consiste en crear un programa que se comporte igual que yo, es decir, que provea los mismos desafíos y que sea necesario hacer lo mismo para resolverlos. No basta con esperar la respuesta.
+Además, deberán implementar otro programa para comunicarse conmigo.
+
+Deberán estar atentos a los easter eggs.
+
+Para verificar que sus respuestas tienen el formato correcto respondan a este desafío con la palabra 'entendido\n'
+
+)                                                                       = 693
+puts("\n----- PREGUNTA PARA INVESTIGAR "...
+----- PREGUNTA PARA INVESTIGAR -----
+)                                                                                  = 38
+printf("%s\n\n", "\302\277C\303\263mo descubrieron el protocol"...¿Cómo descubrieron el protocolo, la dirección y el puerto para conectarse?
+
+)                                                           = 79
+getline(0x7ffe7faf5780, 0x7ffe7faf5778, 0x16d3010, 0x7ffe7faf5778)                                                            = 10
+strcat("echo -n "", "entendido")                                                                                              = "echo -n "entendido"
+popen("echo -n "entendido" | md5sum | s"..., "r")                                                                             = 0x16d32d0
+fgets("f959505ee0c9d7fb7d81a0904aa4e9f4"..., 33, 0x16d32d0)                                                                   = 0x7ffe7faf5370
+--- SIGCHLD (Child exited) ---
+pclose(0x16d32d0)                                                                                                             = 0
+strcmp("f959505ee0c9d7fb7d81a0904aa4e9f4"..., "f959505ee0c9d7fb7d81a0904aa4e9f4"...)                                          = 0
+printf("\033[1;1H\033[2J"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+)                                                                                                    = 10
+puts("------------- DESAFIO ----------"...------------- DESAFIO -------------
+)                                                                                   = 36
+printf("%s\n\n", "HASHTAG left up up left down rig"...HASHTAG left up up left down right down left ASTERISK
+
+)                                                                       = 55
+puts("\n----- PREGUNTA PARA INVESTIGAR "...
+----- PREGUNTA PARA INVESTIGAR -----
+)                                                                                  = 38
+printf("%s\n\n", "\302\277Qu\303\251 diferencias hay entre TCP"...¿Qué diferencias hay entre TCP y UDP y en qué casos conviene usar cada uno?
+
+)                                                           = 80
+getline(0x7ffe7faf5780, 0x7ffe7faf5778, 0x16d3010, 0x7ffe7faf5778)                                                            = 8
+strcat("echo -n "", "0854780")                                                                                                = "echo -n "0854780"
+popen("echo -n "0854780" | md5sum | sed"..., "r")                                                                             = 0x16d32d0
+fgets("d91e99f014daecaf327fc8b96041aa34"..., 33, 0x16d32d0)                                                                   = 0x7ffe7faf5370
+--- SIGCHLD (Child exited) ---
+pclose(0x16d32d0)                                                                                                             = 0
+strcmp("d91e99f014daecaf327fc8b96041aa34"..., "d91e99f014daecaf327fc8b96041aa34"...)                                          = 0
+printf("\033[1;1H\033[2J"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+)                                                                                                    = 10
+puts("------------- DESAFIO ----------"...------------- DESAFIO -------------
+)                                                                                   = 36
+printf("%s\n\n", "https://voca.ro/hcmH7cqyqTg"https://voca.ro/hcmH7cqyqTg
+
+)                                                                               = 29
+puts("\n----- PREGUNTA PARA INVESTIGAR "...
+----- PREGUNTA PARA INVESTIGAR -----
+)                                                                                  = 38
+printf("%s\n\n", "\302\277El puerto que usaron para cone"...¿El puerto que usaron para conectarse al server es el mismo que usan para mandar las respuestas? ¿Por qué?
+
+)                                                                 = 111
+getline(0x7ffe7faf5780, 0x7ffe7faf5778, 0x16d3010, 0x7ffe7faf5778)                                                            = 19
+strcat("echo -n "", "martin luther king")                                                                                     = "echo -n "martin luther king"
+popen("echo -n "martin luther king" | m"..., "r")                                                                             = 0x16d32d0
+fgets("37df469bcb37ed7e83bbd42a8bae9200"..., 33, 0x16d32d0)                                                                   = 0x7ffe7faf5370
+--- SIGCHLD (Child exited) ---
+pclose(0x16d32d0)                                                                                                             = 0
+strcmp("37df469bcb37ed7e83bbd42a8bae9200"..., "37df469bcb37ed7e83bbd42a8bae9200"...)                                          = 0
+printf("\033[1;1H\033[2J"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+)                                                                                                    = 10
+puts("------------- DESAFIO ----------"...------------- DESAFIO -------------
+)                                                                                   = 36
+printf("%s\n\n", "EBADF..."EBADF...
+
+)                                                                                                  = 10
+write(13, "La respuesta es es_go_lo_dro_bo\n"..., 32)                                                                         = -1
+perror("write"write: Bad file descriptor
+)                                                                                                               = <void>
+puts("\n----- PREGUNTA PARA INVESTIGAR "...
+----- PREGUNTA PARA INVESTIGAR -----
+)                                                                                  = 38
+printf("%s\n\n", "\302\277Qu\303\251 \303\272til abstracci\303\263n es uti"...¿Qué útil abstracción es utilizada para comunicarse con sockets? ¿se puede utilizar read(2) y write(2) para operar?
+
+)                                               = 122
+getline(0x7ffe7faf5780, 0x7ffe7faf5778, 0x16d3010, 0x7ffe7faf5778)                                                            = 16
+strcat("echo -n "", "es_go_lo_dro_bo")                                                                                        = "echo -n "es_go_lo_dro_bo"
+popen("echo -n "es_go_lo_dro_bo" | md5s"..., "r")                                                                             = 0x16d32d0
+fgets("b666036f3c79608d3e9195292e3466c9"..., 33, 0x16d32d0)                                                                   = 0x7ffe7faf5370
+--- SIGCHLD (Child exited) ---
+pclose(0x16d32d0)                                                                                                             = 0
+strcmp("b666036f3c79608d3e9195292e3466c9"..., "b666036f3c79608d3e9195292e3466c9"...)                                          = 0
+printf("\033[1;1H\033[2J"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+)                                                                                                    = 10
+puts("------------- DESAFIO ----------"...------------- DESAFIO -------------
+)                                                                                   = 36
+printf("%s\n\n", "respuesta = strings:377"respuesta = strings:377
+
+)                                                                                   = 25
+puts("\n----- PREGUNTA PARA INVESTIGAR "...
+----- PREGUNTA PARA INVESTIGAR -----
+)                                                                                  = 38
+printf("%s\n\n", "\302\277C\303\263mo garantiza TCP que los pa"...¿Cómo garantiza TCP que los paquetes llegan en orden y no se pierden?
+
+)                                                           = 73
+getline(0x7ffe7faf5780, 0x7ffe7faf5778, 0x16d3010, 0x7ffe7faf5778)                                                            = 9
+strcat("echo -n "", "too_easy")                                                                                               = "echo -n "too_easy"
+popen("echo -n "too_easy" | md5sum | se"..., "r")                                                                             = 0x16d32d0
+fgets("ce0c1111d26e426e0ea7c1f58d5488fe"..., 33, 0x16d32d0)                                                                   = 0x7ffe7faf5370
+--- SIGCHLD (Child exited) ---
+pclose(0x16d32d0)                                                                                                             = 0
+strcmp("ce0c1111d26e426e0ea7c1f58d5488fe"..., "ce0c1111d26e426e0ea7c1f58d5488fe"...)                                          = 0
+printf("\033[1;1H\033[2J"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+)                                                                                                    = 10
+puts("------------- DESAFIO ----------"...------------- DESAFIO -------------
+)                                                                                   = 36
+printf("%s\n\n", ".data .bss .comment ? .shstrtab "....data .bss .comment ? .shstrtab .symtab .strtab
+
+)                                                                       = 49
+puts("\n----- PREGUNTA PARA INVESTIGAR "...
+----- PREGUNTA PARA INVESTIGAR -----
+)                                                                                  = 38
+printf("%s\n\n", "Un servidor suele crear un nuevo"...Un servidor suele crear un nuevo proceso o thread para atender las conexiones entrantes. ¿Qué conviene más?
+
+)                                                                       = 112
+getline(0x7ffe7faf5780, 0x7ffe7faf5778, 0x16d3010, 0x7ffe7faf5778)                                                            = 8
+strcat("echo -n "", ".RUN_ME")                                                                                                = "echo -n ".RUN_ME"
+popen("echo -n ".RUN_ME" | md5sum | sed"..., "r")                                                                             = 0x16d32d0
+fgets("752435d46843b72130c3b0b3bc1220d4"..., 33, 0x16d32d0)                                                                   = 0x7ffe7faf5370
+--- SIGCHLD (Child exited) ---
+pclose(0x16d32d0)                                                                                                             = 0
+strcmp("752435d46843b72130c3b0b3bc1220d4"..., "752435d46843b72130c3b0b3bc1220d4"...)                                          = 0
+printf("\033[1;1H\033[2J"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+)                                                                                                    = 10
+puts("------------- DESAFIO ----------"...------------- DESAFIO -------------
+)                                                                                   = 36
+printf("%s\n\n", "mixed fds"mixed fds
+
+)                                                                                                 = 11
+time(0x7ffe7faf52c8)                                                                                                          = 1591216675
+srand(0x5ed80a23, 0x6031c0, 0x7ffe7faf52d0, 0x6031c0)                                                                         = 0
+rand(0x7f24f81c05c0, 0x7ffe7faf528c, 0x7ffe7faf52d0, 0x7f24f81c00b0)                                                          = 0x3fff05db
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xa3d489, 87)                                                                            = 0x2095583b
+fputc('U', 0x7f24f81c1060U)                                                                                                    = 85
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x148eedeb
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x34a119, 39)                                                                            = 0x239f72e6
+fputc('i', 0x7f24f81c1060i)                                                                                                    = 105
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x43d2cdf3
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xada0c7, 55)                                                                            = 0x45b105cb
+fputc('G', 0x7f24f81c1060G)                                                                                                    = 71
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x12ea35c5
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x306c0e, 77)                                                                            = 0x357155a1
+fputc('Y', 0x7f24f81c1060Y)                                                                                                    = 89
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x1f903e0
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x50cd6, 72)                                                                             = 0x752c6c63
+fputc('Z', 0x7f24f81c1060Z)                                                                                                    = 90
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x2d3f0836
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x73d48f, 90)                                                                            = 0x6825a718
+fputc(';', 0x7f24f81c1060;)                                                                                                    = 59
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x2280a1ad
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x585389, 41)                                                                            = 0x2a710542
+fputc('!', 0x7f24f81c1060!)                                                                                                    = 33
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x70918cd7
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x1202ced, 67)                                                                           = 0x44438da5
+fputc('I', 0x7f24f81c1060I)                                                                                                    = 73
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x799bdffd
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x1375199, 57)                                                                           = 0xea4252a
+fputc('m', 0x7f24f81c1060m)                                                                                                    = 109
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x2a7c3e92
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x6cc32f, 54)                                                                            = 0x1f182442
+fputc('^', 0x7f24f81c1060^)                                                                                                    = 94
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x481bb02c
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xb898cd, 24)                                                                            = 0x5dda3b66
+fputc('E', 0x7f24f81c1060E)                                                                                                    = 69
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x31cee2db
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x7f8244, 75)                                                                            = 0x1274a449
+fputc('S', 0x7f24f81c1060S)                                                                                                    = 83
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x4ff27412
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xccaa1e, 90)                                                                            = 0x7375e0c3
+fputc('v', 0x7f24f81c1060v)                                                                                                    = 118
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0xb2ff709
+fputc('L', 0x7f24f81c12a0L)                                                                                                    = 76
+rand(0, 0x7f24f81c27a0, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x41c33784
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xa85a27, 72)                                                                            = 0x3dc1c40a
+fputc('R', 0x7f24f81c1060R)                                                                                                    = 82
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x7590e8f5
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x12cf816, 93)                                                                           = 0x122de9b4
+fputc('&', 0x7f24f81c1060&)                                                                                                    = 38
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x7dc0c9e5
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x141ed89, 97)                                                                           = 0x16264130
+fputc('(', 0x7f24f81c1060()                                                                                                    = 40
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x26bcd7a0
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x632b1d, 76)                                                                            = 0x21603ccc
+fputc('d', 0x7f24f81c1060d)                                                                                                    = 100
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x59f90f23
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xe654a1, 63)                                                                            = 0x6c6ddd6b
+fputc('/', 0x7f24f81c1060/)                                                                                                    = 47
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x344a7291
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x85dd4e, 25)                                                                            = 0xf6a64c4
+fputc('"', 0x7f24f81c1060")                                                                                                    = 34
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x6e66e14b
+fputc('a', 0x7f24f81c12a0a)                                                                                                    = 97
+rand(0, 0x7f24f81c27a0, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x2976def4
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x6a2611, 80)                                                                            = 0x3ca96cfa
+fputc('1', 0x7f24f81c10601)                                                                                                    = 49
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x568c8863
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xdd90b9, 31)                                                                            = 0x4bf780a1
+fputc('g', 0x7f24f81c1060g)                                                                                                    = 103
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x671a723c
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x107f1c8, 28)                                                                           = 0x471e153a
+fputc('4', 0x7f24f81c10604)                                                                                                    = 52
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x103b0e47
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x298cf1, 35)                                                                            = 0x60b6523a
+fputc('#', 0x7f24f81c1060#)                                                                                                    = 35
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x55c23a64
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xdb8ad2, 92)                                                                            = 0x3ab74cd9
+fputc('~', 0x7f24f81c1060~)                                                                                                    = 126
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x7fce767c
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x1472f43, 80)                                                                           = 0x1dddea90
+fputc('K', 0x7f24f81c1060K)                                                                                                    = 75
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x1891883f
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x3ee533, 83)                                                                            = 0x319d5957
+fputc('"', 0x7f24f81c1060")                                                                                                    = 34
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x30528eda
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x7bb4a0, 90)                                                                            = 0x6883fc52
+fputc(')', 0x7f24f81c1060))                                                                                                    = 41
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x25133a1a
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x5ee98a, 50)                                                                            = 0x3b8285e3
+fputc('j', 0x7f24f81c1060j)                                                                                                    = 106
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x2a4733d6
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x6c3b65, 98)                                                                            = 0x62d4fe24
+fputc('H', 0x7f24f81c1060H)                                                                                                    = 72
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x31136ed8
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x7da263, 44)                                                                            = 0x3c751d8a
+fputc('j', 0x7f24f81c1060j)                                                                                                    = 106
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x6095c80a
+fputc(' ', 0x7f24f81c12a0 )                                                                                                    = 32
+rand(0, 0x7f24f81c27a0, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x4739b009
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xb6563d, 53)                                                                            = 0x6331f52a
+fputc('R', 0x7f24f81c1060R)                                                                                                    = 82
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x1f604d6
+fputc('r', 0x7f24f81c12a0r)                                                                                                    = 114
+rand(0, 0x7f24f81c27a0, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x2132bf2c
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x54fcca, 68)                                                                            = 0x4f9fd295
+fputc('^', 0x7f24f81c1060^)                                                                                                    = 94
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x36407767
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x8ae279, 35)                                                                            = 0x309d23f1
+fputc('q', 0x7f24f81c1060q)                                                                                                    = 113
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x3e06b3e0
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x9ec97a, 56)                                                                            = 0x5fb7565b
+fputc('f', 0x7f24f81c1060f)                                                                                                    = 102
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x6d4690eb
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x117bee3, 63)                                                                           = 0x14933c43
+fputc('3', 0x7f24f81c10603)                                                                                                    = 51
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x2baed6fc
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x6fd411, 88)                                                                            = 0x54610328
+fputc('3', 0x7f24f81c10603)                                                                                                    = 51
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x5bb1517d
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xeabbb1, 89)                                                                            = 0x3be9e543
+fputc('Z', 0x7f24f81c1060Z)                                                                                                    = 90
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x35175562
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x87e9d0, 34)                                                                            = 0x31738be1
+fputc('F', 0x7f24f81c1060F)                                                                                                    = 70
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x76a1321d
+fputc('e', 0x7f24f81c12a0e)                                                                                                    = 101
+rand(0, 0x7f24f81c27a0, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x34e5cbde
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x876aff, 66)                                                                            = 0x4f517672
+fputc('r', 0x7f24f81c1060r)                                                                                                    = 114
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0xf32ba5c
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x26e843, 48)                                                                            = 0x66832535
+fputc('s', 0x7f24f81c1060s)                                                                                                    = 115
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x7fa4054c
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x146c29c, 92)                                                                           = 0x77b6b6ae
+fputc('"', 0x7f24f81c1060")                                                                                                    = 34
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0xb965f50
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x1da9e9, 76)                                                                            = 0x3b268b2f
+fputc('Z', 0x7f24f81c1060Z)                                                                                                    = 90
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x21fdea84
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x5704e7, 72)                                                                            = 0x6e6b5d74
+fputc('0', 0x7f24f81c10600)                                                                                                    = 48
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x6c39fa08
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x1150f4c, 88)                                                                           = 0x5e73080f
+fputc('O', 0x7f24f81c1060O)                                                                                                    = 79
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x4f01257e
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xca405f, 98)                                                                            = 0x3373aa11
+fputc('<', 0x7f24f81c1060<)                                                                                                    = 60
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x41a4fd39
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xa80cc5, 69)                                                                            = 0x50f72a54
+fputc('U', 0x7f24f81c1060U)                                                                                                    = 85
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x54a6693d
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xd8b440, 61)                                                                            = 0x1144cfcf
+fputc('[', 0x7f24f81c1060[)                                                                                                    = 91
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x737a1bb
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x1279ef, 95)                                                                            = 0x5438d2e
+fputc('y', 0x7f24f81c1060y)                                                                                                    = 121
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x4f4b83af
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xcafec1, 75)                                                                            = 0x66eef816
+fputc('C', 0x7f24f81c1060C)                                                                                                    = 67
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x728a1e1a
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x125389e, 98)                                                                           = 0x63debff3
+fputc('\\', 0x7f24f81c1060\)                                                                                                   = 92
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x129dcf13
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x2fa878, 51)                                                                            = 0x46eb2142
+fputc('.', 0x7f24f81c1060.)                                                                                                    = 46
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x3f901170
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xa2b87e, 56)                                                                            = 0x4e87b456
+fputc('G', 0x7f24f81c1060G)                                                                                                    = 71
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x7c0276a4
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x13d76f2, 28)                                                                           = 0x71039d52
+fputc('H', 0x7f24f81c1060H)                                                                                                    = 72
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x4528e673
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xb10c8b, 39)                                                                            = 0x30e84282
+fputc('0', 0x7f24f81c10600)                                                                                                    = 48
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x405513c4
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xa4b0d6, 44)                                                                            = 0x545ba0d0
+fputc('x', 0x7f24f81c1060x)                                                                                                    = 120
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x176b67b7
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x3bf43c, 71)                                                                            = 0x3ff91910
+fputc('(', 0x7f24f81c1060()                                                                                                    = 40
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x4c12577e
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xc2be50, 62)                                                                            = 0x2301c707
+fputc('h', 0x7f24f81c1060h)                                                                                                    = 104
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x7b1fa43f
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x13b3248, 31)                                                                           = 0x6e104203
+fputc('\\', 0x7f24f81c1060\)                                                                                                   = 92
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x116d247c
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x2c9c86, 36)                                                                            = 0x67599e47
+fputc('X', 0x7f24f81c1060X)                                                                                                    = 88
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x4c834a12
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xc3df75, 94)                                                                            = 0x606e49fa
+fputc('G', 0x7f24f81c1060G)                                                                                                    = 71
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x1acd4858
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x449ce2, 16)                                                                            = 0xe28474b
+fputc('%', 0x7f24f81c1060%)                                                                                                    = 37
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x3165744f
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x7e745c, 95)                                                                            = 0x6f73b196
+fputc('}', 0x7f24f81c1060})                                                                                                    = 125
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x1f6d171a
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x50736e, 34)                                                                            = 0x389d160a
+fputc('W', 0x7f24f81c1060W)                                                                                                    = 87
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x74b73ec4
+fputc('s', 0x7f24f81c12a0s)                                                                                                    = 115
+rand(0, 0x7f24f81c27a0, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x6eb89aca
+fputc('p', 0x7f24f81c12a0p)                                                                                                    = 112
+rand(0, 0x7f24f81c27a0, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x1f8c0e21
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x50c2b3, 53)                                                                            = 0x67415cde
+fputc('r', 0x7f24f81c1060r)                                                                                                    = 114
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x52975abd
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xd36efc, 77)                                                                            = 0x3229dd34
+fputc('e', 0x7f24f81c1060e)                                                                                                    = 101
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x2e2c7e20
+fputc('u', 0x7f24f81c12a0u)                                                                                                    = 117
+rand(0, 0x7f24f81c27a0, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x12276c2d
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x2e7966, 85)                                                                            = 0xb1918a
+fputc('*', 0x7f24f81c1060*)                                                                                                    = 42
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x2a2ef4c4
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x6bfd53, 88)                                                                            = 0x32b097f
+fputc(''', 0x7f24f81c1060')                                                                                                    = 39
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x45da77fe
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xb2d31e, 70)                                                                            = 0x5b173746
+fputc('L', 0x7f24f81c1060L)                                                                                                    = 76
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x43801d43
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xaccd17, 71)                                                                            = 0x1a3618ce
+fputc(' ', 0x7f24f81c1060 )                                                                                                    = 32
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x72829efe
+fputc('e', 0x7f24f81c12a0e)                                                                                                    = 101
+rand(0, 0x7f24f81c27a0, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x3793653
+fputc('s', 0x7f24f81c12a0s)                                                                                                    = 115
+rand(0, 0x7f24f81c27a0, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x6648704c
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x105d829, 72)                                                                           = 0x15846605
+fputc('4', 0x7f24f81c10604)                                                                                                    = 52
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x7e98da93
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x14416aa, 43)                                                                           = 0x5458b24f
+fputc('Q', 0x7f24f81c1060Q)                                                                                                    = 81
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x26f18a81
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x63b206, 41)                                                                            = 0x65f278da
+fputc(']', 0x7f24f81c1060])                                                                                                    = 93
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x20dbfc61
+fputc('t', 0x7f24f81c12a0t)                                                                                                    = 116
+rand(0, 0x7f24f81c27a0, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x75fd47c
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x12e0d8, 28)                                                                            = 0xbfc133
+fputc('M', 0x7f24f81c1060M)                                                                                                    = 77
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x2f0443ad
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x785cd6, 21)                                                                            = 0x38c548cb
+fputc('K', 0x7f24f81c1060K)                                                                                                    = 75
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x703372c9
+fputc('a', 0x7f24f81c12a0a)                                                                                                    = 97
+rand(0, 0x7f24f81c27a0, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x4e715ac7
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xc8d044, 55)                                                                            = 0x71625ed5
+fputc('#', 0x7f24f81c1060#)                                                                                                    = 35
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x64eab18d
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x10258d0, 77)                                                                           = 0x3d29f591
+fputc('E', 0x7f24f81c1060E)                                                                                                    = 69
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x10ee6cf6
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x2b5821, 18)                                                                            = 0x4c2c0e6c
+fputc('1', 0x7f24f81c10601)                                                                                                    = 49
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0xfc1504e
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x285548, 46)                                                                            = 0x43184a2a
+fputc('^', 0x7f24f81c1060^)                                                                                                    = 94
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x7a588c8c
+fputc(' ', 0x7f24f81c12a0 )                                                                                                    = 32
+rand(0, 0x7f24f81c27a0, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x21e8bc7c
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x56ceaf, 32)                                                                            = 0x43c9dbb5
+fputc('i', 0x7f24f81c1060i)                                                                                                    = 105
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x24878151
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x5d83da, 41)                                                                            = 0x2513c5fb
+fputc('o', 0x7f24f81c1060o)                                                                                                    = 111
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x9a453b3
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x18aeea, 75)                                                                            = 0x7f9eb897
+fputc('u', 0x7f24f81c1060u)                                                                                                    = 117
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x6893e33f
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x10bb808, 31)                                                                           = 0x23da6c81
+fputc('p', 0x7f24f81c1060p)                                                                                                    = 112
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x72215795
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x1242c65, 33)                                                                           = 0x6c0d1992
+fputc('T', 0x7f24f81c1060T)                                                                                                    = 84
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0xa22dccd
+fputc('e', 0x7f24f81c12a0e)                                                                                                    = 101
+rand(0, 0x7f24f81c27a0, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x7a5bd9b
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x1393d0, 91)                                                                            = 0x6aa5f425
+fputc('Y', 0x7f24f81c1060Y)                                                                                                    = 89
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x5e7b8f1d
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xf1e026, 69)                                                                            = 0x2e97481c
+fputc('^', 0x7f24f81c1060^)                                                                                                    = 94
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x50986d00
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xce5302, 56)                                                                            = 0x7f578b7e
+fputc('o', 0x7f24f81c1060o)                                                                                                    = 111
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x35f71c98
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x8a26af, 60)                                                                            = 0x51582e33
+fputc('b', 0x7f24f81c1060b)                                                                                                    = 98
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x2e5bcf2b
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x76ad97, 47)                                                                            = 0x6ebc6563
+fputc('Z', 0x7f24f81c1060Z)                                                                                                    = 90
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x418ba0fc
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xa7cbd9, 56)                                                                            = 0x7ccd29f3
+fputc('i', 0x7f24f81c1060i)                                                                                                    = 105
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x601ec439
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xf61152, 49)                                                                            = 0x26765289
+fputc('H', 0x7f24f81c1060H)                                                                                                    = 72
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x39f71f84
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x946427, 72)                                                                            = 0x710d312f
+fputc('T', 0x7f24f81c1060T)                                                                                                    = 84
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x72a260f5
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x12576ba, 77)                                                                           = 0x49b86fd3
+fputc('3', 0x7f24f81c10603)                                                                                                    = 51
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x34257b5a
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x857eac, 42)                                                                            = 0x6cfaed82
+fputc('f', 0x7f24f81c1060f)                                                                                                    = 102
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x6ba12c4f
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x113881f, 51)                                                                           = 0x77ef570f
+fputc('z', 0x7f24f81c1060z)                                                                                                    = 122
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x11826ed3
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x2cd307, 23)                                                                            = 0x10b4f24a
+fputc('h', 0x7f24f81c1060h)                                                                                                    = 104
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x193aac2
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x40963, 22)                                                                             = 0x1121276a
+fputc(' ', 0x7f24f81c1060 )                                                                                                    = 32
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x7948d589
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x1367d03, 93)                                                                           = 0x256e1743
+fputc('Y', 0x7f24f81c1060Y)                                                                                                    = 89
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x3427f00
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x8584f, 36)                                                                             = 0x6555ef1c
+fputc('K', 0x7f24f81c1060K)                                                                                                    = 75
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x2f90f410
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x79c500, 16)                                                                            = 0xae83c9b
+fputc('r', 0x7f24f81c1060r)                                                                                                    = 114
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x4ffbe341
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xccc245, 77)                                                                            = 0xe0c832d
+fputc('T', 0x7f24f81c1060T)                                                                                                    = 84
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x397f84b7
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x9331f7, 59)                                                                            = 0x20945041
+fputc('4', 0x7f24f81c10604)                                                                                                    = 52
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0xd640eac
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x2247d3, 64)                                                                            = 0x6f76a150
+fputc('a', 0x7f24f81c1060a)                                                                                                    = 97
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x71ec7e74
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x123a51a, 76)                                                                           = 0x3bbfddd7
+fputc('l', 0x7f24f81c1060l)                                                                                                    = 108
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x5e3306b3
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xf12677, 55)                                                                            = 0x33781f70
+fputc('~', 0x7f24f81c1060~)                                                                                                    = 126
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x388d07ca
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x90c532, 66)                                                                            = 0x3e51caec
+fputc('q', 0x7f24f81c1060q)                                                                                                    = 113
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x59ee71fa
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xe63975, 70)                                                                            = 0x7284274f
+fputc('`', 0x7f24f81c1060`)                                                                                                    = 96
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x2f5efc1c
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x794514, 76)                                                                            = 0x4c90d2ef
+fputc('~', 0x7f24f81c1060~)                                                                                                    = 126
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x3c3c9722
+fputc('s', 0x7f24f81c12a0s)                                                                                                    = 115
+rand(0, 0x7f24f81c27a0, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x63847776
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xfec3c1, 18)                                                                            = 0x398bc071
+fputc('b', 0x7f24f81c1060b)                                                                                                    = 98
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x27ddc371
+fputc(' ', 0x7f24f81c12a0 )                                                                                                    = 32
+rand(0, 0x7f24f81c27a0, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x5b73ce85
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xea1e39, 65)                                                                            = 0x4b0e2f44
+fputc('o', 0x7f24f81c1060o)                                                                                                    = 111
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x3892b5bb
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x90d3bc, 75)                                                                            = 0x5d077947
+fputc('6', 0x7f24f81c10606)                                                                                                    = 54
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x5c2f56af
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xebfe4e, 55)                                                                            = 0x31db8b45
+fputc('I', 0x7f24f81c1060I)                                                                                                    = 73
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x275908a
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x64baf, 46)                                                                             = 0x5f71d5af
+fputc('0', 0x7f24f81c10600)                                                                                                    = 48
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x17317a61
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x3b5ff1, 61)                                                                            = 0x3206849a
+fputc(',', 0x7f24f81c1060,)                                                                                                    = 44
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x6a5a124a
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x11042be, 18)                                                                           = 0x672d5da2
+fputc('s', 0x7f24f81c1060s)                                                                                                    = 115
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x401307c8
+fputc('i', 0x7f24f81c12a0i)                                                                                                    = 105
+rand(0, 0x7f24f81c27a0, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x23d99701
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x5bc6a1, 29)                                                                            = 0x7c1ade4
+fputc('&', 0x7f24f81c1060&)                                                                                                    = 38
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x4d771674
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xc64f95, 64)                                                                            = 0x13503851
+fputc('0', 0x7f24f81c10600)                                                                                                    = 48
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x79ae2c58
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x1378071, 52)                                                                           = 0x936f44b
+fputc('m', 0x7f24f81c1060m)                                                                                                    = 109
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x71833f05
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x12297ab, 57)                                                                           = 0x2d264bc9
+fputc('y', 0x7f24f81c1060y)                                                                                                    = 121
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x41c3fc16
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xa85c1e, 94)                                                                            = 0x2fd509f1
+fputc('9', 0x7f24f81c10609)                                                                                                    = 57
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x714bdc3
+fputc('n', 0x7f24f81c12a0n)                                                                                                    = 110
+rand(0, 0x7f24f81c27a0, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x34482365
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x85d764, 85)                                                                            = 0x5f34060d
+fputc(']', 0x7f24f81c1060])                                                                                                    = 93
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x53a590b2
+fputc('_', 0x7f24f81c12a0_)                                                                                                    = 95
+rand(0, 0x7f24f81c27a0, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x7084ba87
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x1200c1a, 95)                                                                           = 0x42b87d83
+fputc('0', 0x7f24f81c10600)                                                                                                    = 48
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0xd315124
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x21c5ee, 44)                                                                            = 0x18627df8
+fputc('W', 0x7f24f81c1060W)                                                                                                    = 87
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x1e2c4c08
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x4d3e33, 28)                                                                            = 0x583f8068
+fputc('n', 0x7f24f81c1060n)                                                                                                    = 110
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x50f533b3
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xcf4084, 35)                                                                            = 0x7b33c54f
+fputc('p', 0x7f24f81c1060p)                                                                                                    = 112
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x346ed717
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x863a78, 55)                                                                            = 0x2d0bef8
+fputc('P', 0x7f24f81c1060P)                                                                                                    = 80
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x7da955d9
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x141b17f, 61)                                                                           = 0x13e0acc6
+fputc('i', 0x7f24f81c1060i)                                                                                                    = 105
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x1a023959
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x42950d, 69)                                                                            = 0x2fafda74
+fputc('g', 0x7f24f81c1060g)                                                                                                    = 103
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x7e3abf10
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x14325c0, 16)                                                                           = 0x12f96fc
+fputc('4', 0x7f24f81c10604)                                                                                                    = 52
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x6fc2e23c
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x11e1bdc, 76)                                                                           = 0x22145612
+fputc('<', 0x7f24f81c1060<)                                                                                                    = 60
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x8f144e0
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x16e487, 36)                                                                            = 0x3d39f8b0
+fputc('J', 0x7f24f81c1060J)                                                                                                    = 74
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x35648e63
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x88af80, 99)                                                                            = 0x29f7138
+fputc('4', 0x7f24f81c10604)                                                                                                    = 52
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x4670ecfb
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xb4544a, 19)                                                                            = 0x26e7cd68
+fputc('s', 0x7f24f81c1060s)                                                                                                    = 115
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x2fc5bd01
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x7a4c21, 29)                                                                            = 0x834e911
+fputc('W', 0x7f24f81c1060W)                                                                                                    = 87
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x56bcd75a
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xde0c64, 74)                                                                            = 0x36da7ac4
+fputc('M', 0x7f24f81c1060M)                                                                                                    = 77
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x3c7d0c76
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x9ad9b9, 50)                                                                            = 0x35f0dd67
+fputc('h', 0x7f24f81c1060h)                                                                                                    = 104
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0xa800b77
+fputc('d', 0x7f24f81c12a0d)                                                                                                    = 100
+rand(0, 0x7f24f81c27a0, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x2d01c6fd
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x7337bf, 97)                                                                            = 0x78a95aeb
+fputc('y', 0x7f24f81c1060y)                                                                                                    = 121
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x17b15c9b
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x3ca753, 47)                                                                            = 0x456444f5
+fputc('|', 0x7f24f81c1060|)                                                                                                    = 124
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x16d5a6f3
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x3a74de, 59)                                                                            = 0x6ff0dd03
+fputc('W', 0x7f24f81c1060W)                                                                                                    = 87
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x165978a9
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x3936f7, 45)                                                                            = 0x12096c43
+fputc('@', 0x7f24f81c1060@)                                                                                                    = 64
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x245fb41b
+fputc('e', 0x7f24f81c12a0e)                                                                                                    = 101
+rand(0, 0x7f24f81c27a0, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x192a37a1
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x406c13, 53)                                                                            = 0xfb2c21c
+fputc('z', 0x7f24f81c1060z)                                                                                                    = 122
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x384060e1
+fputc('_', 0x7f24f81c12a0_)                                                                                                    = 95
+rand(0, 0x7f24f81c27a0, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x332c70fb
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x830121, 23)                                                                            = 0x3f629c90
+fputc('b', 0x7f24f81c1060b)                                                                                                    = 98
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x367b1ff2
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x8b78a3, 70)                                                                            = 0x345c07f7
+fputc('-', 0x7f24f81c1060-)                                                                                                    = 45
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x2f257ecc
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x78b1e8, 44)                                                                            = 0x588f7604
+fputc('#', 0x7f24f81c1060#)                                                                                                    = 35
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x3d4d4cd7
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x9ceed9, 19)                                                                            = 0x6c5f777c
+fputc('S', 0x7f24f81c1060S)                                                                                                    = 83
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0xdf40467
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x23b85d, 19)                                                                            = 0x3fecbe0f
+fputc('[', 0x7f24f81c1060[)                                                                                                    = 91
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x32d06478
+fputc('t', 0x7f24f81c12a0t)                                                                                                    = 116
+rand(0, 0x7f24f81c27a0, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x34dbd1d0
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x875175, 28)                                                                            = 0x6fb27b11
+fputc('j', 0x7f24f81c1060j)                                                                                                    = 106
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x3b054d89
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x9717d0, 73)                                                                            = 0xb98a92a
+fputc('L', 0x7f24f81c1060L)                                                                                                    = 76
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x268cf5d5
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x62b089, 81)                                                                            = 0x77825a00
+fputc('y', 0x7f24f81c1060y)                                                                                                    = 121
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x41898691
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xa7c677, 21)                                                                            = 0x310d014c
+fputc('~', 0x7f24f81c1060~)                                                                                                    = 126
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x248420fd
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x5d7b35, 73)                                                                            = 0x3a32e17c
+fputc(',', 0x7f24f81c1060,)                                                                                                    = 44
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x48be5de7
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xba3942, 31)                                                                            = 0x69e865f3
+fputc(':', 0x7f24f81c1060:)                                                                                                    = 58
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x51088870
+fputc('e', 0x7f24f81c12a0e)                                                                                                    = 101
+rand(0, 0x7f24f81c27a0, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x38af3aeb
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x911cbf, 79)                                                                            = 0x41de9c
+fputc('<', 0x7f24f81c1060<)                                                                                                    = 60
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x6311f4b3
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xfd9e9b, 39)                                                                            = 0x5d0eef06
+fputc('O', 0x7f24f81c1060O)                                                                                                    = 79
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x196c163d
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x4114b3, 81)                                                                            = 0x72c4b6cf
+fputc('y', 0x7f24f81c1060y)                                                                                                    = 121
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x154f4fe7
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x368d99, 35)                                                                            = 0x4c988738
+fputc('j', 0x7f24f81c1060j)                                                                                                    = 106
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x32275360
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x8064ac, 48)                                                                            = 0x4bca6fd9
+fputc('/', 0x7f24f81c1060/)                                                                                                    = 47
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0xf48f2f
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x27212, 39)                                                                             = 0x614cd22c
+fputc('c', 0x7f24f81c1060c)                                                                                                    = 99
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x2459e5dd
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x5d0f19, 25)                                                                            = 0x3e41dc06
+fputc('<', 0x7f24f81c1060<)                                                                                                    = 60
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x4dac49a9
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xc6d7c6, 81)                                                                            = 0x324dea45
+fputc('\\', 0x7f24f81c1060\)                                                                                                   = 92
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x7e2e9a16
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x14306a9, 18)                                                                           = 0x7cae21
+fputc('{', 0x7f24f81c1060{)                                                                                                    = 123
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x6729bc15
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x10818eb, 73)                                                                           = 0x6de11527
+fputc('`', 0x7f24f81c1060`)                                                                                                    = 96
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x3b81fbaa
+fputc('r', 0x7f24f81c12a0r)                                                                                                    = 114
+rand(0, 0x7f24f81c27a0, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x72c2653f
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x125c8b1, 27)                                                                           = 0x146e0afc
+fputc('r', 0x7f24f81c1060r)                                                                                                    = 114
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x330455aa
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x829a74, 90)                                                                            = 0x344bebd0
+fputc('\\', 0x7f24f81c1060\)                                                                                                   = 92
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x457b0c49
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xb1ded7, 77)                                                                            = 0x578876a8
+fputc('Q', 0x7f24f81c1060Q)                                                                                                    = 81
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x6e7ecd4d
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x11ade36, 53)                                                                           = 0xe396a30
+fputc('W', 0x7f24f81c1060W)                                                                                                    = 87
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x4170dc9b
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xa78753, 47)                                                                            = 0x3f8755bd
+fputc('E', 0x7f24f81c1060E)                                                                                                    = 69
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x46e8a51b
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xb586c5, 39)                                                                            = 0x41b2bb37
+fputc('%', 0x7f24f81c1060%)                                                                                                    = 37
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x22994a70
+fputc('_', 0x7f24f81c12a0_)                                                                                                    = 95
+rand(0, 0x7f24f81c27a0, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x23f79421
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x5c1366, 73)                                                                            = 0x5b1ed174
+fputc('v', 0x7f24f81c1060v)                                                                                                    = 118
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x155e013f
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x36b336, 39)                                                                            = 0x3946e409
+fputc('j', 0x7f24f81c1060j)                                                                                                    = 106
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x27b758ad
+fputc('m', 0x7f24f81c12a0m)                                                                                                    = 109
+rand(0, 0x7f24f81c27a0, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x4785549f
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xb717e2, 87)                                                                            = 0x51153e2
+fputc('v', 0x7f24f81c1060v)                                                                                                    = 118
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x28abe7dc
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x681e7a, 52)                                                                            = 0x28d226cc
+fputc('T', 0x7f24f81c1060T)                                                                                                    = 84
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x296b39c0
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x6a0841, 92)                                                                            = 0x66edc3e3
+fputc('q', 0x7f24f81c1060q)                                                                                                    = 113
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x767e7075
+fputc('i', 0x7f24f81c12a0i)                                                                                                    = 105
+rand(0, 0x7f24f81c27a0, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x5bb92405
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xeacfb8, 37)                                                                            = 0x651c5df9
+fputc('g', 0x7f24f81c1060g)                                                                                                    = 103
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x76fb1e96
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x1309758, 54)                                                                           = 0x42e2e01a
+fputc('^', 0x7f24f81c1060^)                                                                                                    = 94
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x52fd7320
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xd47459, 92)                                                                            = 0x327d1a40
+fputc(' ', 0x7f24f81c1060 )                                                                                                    = 32
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x35a54559
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x89552c, 41)                                                                            = 0x676b7e1c
+fputc('8', 0x7f24f81c10608)                                                                                                    = 56
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x65816feb
+fputc('_', 0x7f24f81c12a0_)                                                                                                    = 95
+rand(0, 0x7f24f81c27a0, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x69f13129
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x10f3640, 41)                                                                           = 0x2ce68a65
+fputc('(', 0x7f24f81c1060()                                                                                                    = 40
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x3d09e693
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x9c424e, 27)                                                                            = 0x586ffe76
+fputc('I', 0x7f24f81c1060I)                                                                                                    = 73
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x3b1ff496
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x975c0b, 74)                                                                            = 0x7e7ac32e
+fputc('L', 0x7f24f81c1060L)                                                                                                    = 76
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x17f75433
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x3d5a71, 15)                                                                            = 0x20899b1
+fputc('R', 0x7f24f81c1060R)                                                                                                    = 82
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x402d7e65
+fputc('n', 0x7f24f81c12a0n)                                                                                                    = 110
+rand(0, 0x7f24f81c27a0, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x3a909ea3
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x95ed1b, 23)                                                                            = 0x26002dd3
+fputc('t', 0x7f24f81c1060t)                                                                                                    = 116
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x1b4c4fd9
+fputc('a', 0x7f24f81c12a0a)                                                                                                    = 97
+rand(0, 0x7f24f81c27a0, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x4fee9fe3
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xcca051, 63)                                                                            = 0x5f4711dc
+fputc('_', 0x7f24f81c1060_)                                                                                                    = 95
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x4303a886
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xab8e7c, 22)                                                                            = 0x1773f482
+fputc('6', 0x7f24f81c10606)                                                                                                    = 54
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x645865be
+fputc('_', 0x7f24f81c12a0_)                                                                                                    = 95
+rand(0, 0x7f24f81c27a0, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x6baf9063
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x113acf6, 75)                                                                           = 0x40461b4e
+fputc('j', 0x7f24f81c1060j)                                                                                                    = 106
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0xdc39f7e
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x233c79, 58)                                                                            = 0x529d5446
+fputc('F', 0x7f24f81c1060F)                                                                                                    = 70
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x36c48bc3
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x8c3498, 99)                                                                            = 0x697cc383
+fputc('>', 0x7f24f81c1060>)                                                                                                    = 62
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x37b9b23f
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x8ea82e, 71)                                                                            = 0x2dbfaa59
+fputc('4', 0x7f24f81c10604)                                                                                                    = 52
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x2c5fa39d
+fputc('d', 0x7f24f81c12a0d)                                                                                                    = 100
+rand(0, 0x7f24f81c27a0, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0xab7255f
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x1b6e74, 15)                                                                            = 0x603cc49a
+fputc('5', 0x7f24f81c10605)                                                                                                    = 53
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x6204e8f6
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xfaedd9, 50)                                                                            = 0x7222a37b
+fputc('e', 0x7f24f81c1060e)                                                                                                    = 101
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x45be3485
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xb28ac3, 89)                                                                            = 0x4bf61a20
+fputc('`', 0x7f24f81c1060`)                                                                                                    = 96
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x1f092de1
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x4f73a8, 65)                                                                            = 0x2c81b18
+fputc('(', 0x7f24f81c1060()                                                                                                    = 40
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x24661896
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x5d2e53, 42)                                                                            = 0x5a292277
+fputc('L', 0x7f24f81c1060L)                                                                                                    = 76
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x142de46
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x33a8a, 94)                                                                             = 0x3c5d6cca
+fputc('s', 0x7f24f81c1060s)                                                                                                    = 115
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x5c31bc28
+fputc('o', 0x7f24f81c12a0o)                                                                                                    = 111
+rand(0, 0x7f24f81c27a0, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x41705cab
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xa7860b, 95)                                                                            = 0x76ee0b6d
+fputc('!', 0x7f24f81c1060!)                                                                                                    = 33
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x231e9fb
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x59e7f, 95)                                                                             = 0x5cbcac84
+fputc('B', 0x7f24f81c1060B)                                                                                                    = 66
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x46dcab50
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0xb5681c, 96)                                                                            = 0x6178fbd7
+fputc('P', 0x7f24f81c1060P)                                                                                                    = 80
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x1fc0550b
+rand(0x7f24f81c05c0, 0x7ffe7faf529c, 0x514887, 79)                                                                            = 0x5e509fd3
+fputc('[', 0x7f24f81c1060[)                                                                                                    = 91
+rand(0, 0x7f24f81c2790, 0x7ffe7faf52d0, 0x7f24f7ef6c00)                                                                       = 0x45d16196
+fputc('\n', 0x7f24f81c12a0
+)                                                                                                   = 10
+puts("\n----- PREGUNTA PARA INVESTIGAR "...
+----- PREGUNTA PARA INVESTIGAR -----
+)                                                                                  = 38
+printf("%s\n\n", "\302\277C\303\263mo se puede implementar un "...¿Cómo se puede implementar un servidor que atienda muchas conexiones sin usar procesos ni threads?
+
+)                                                           = 102
+getline(0x7ffe7faf5780, 0x7ffe7faf5778, 0x16d3010, 0x7ffe7faf5778)                                                            = 19
+strcat("echo -n "", "in_de_ter_mi_na_do")                                                                                     = "echo -n "in_de_ter_mi_na_do"
+popen("echo -n "in_de_ter_mi_na_do" | m"..., "r")                                                                             = 0x16d32d0
+fgets("80894072aa67d91345425181c937414f"..., 33, 0x16d32d0)                                                                   = 0x7ffe7faf5370
+--- SIGCHLD (Child exited) ---
+pclose(0x16d32d0)                                                                                                             = 0
+strcmp("80894072aa67d91345425181c937414f"..., "80894072aa67d91345425181c937414f"...)                                          = 0
+printf("\033[1;1H\033[2J"
+)                                                                                                    = 10
+puts("------------- DESAFIO ----------"...------------- DESAFIO -------------
+)                                                                                   = 36
+printf("%s\n\n", "Logo"Logo
+
+)                                                                                                      = 6
+printf("____________________"____________________)                                                                                                = 20
+printf("____________________"____________________)                                                                                                = 20
+printf("___(###############/"___(###############/)                                                                                                = 20
+printf("____________________"____________________)                                                                                                = 20
+puts("_______________________"_______________________
+)                                                                                               = 24
+printf("____________________"____________________)                                                                                                = 20
+printf("________________###."________________###.)                                                                                                = 20
+printf("...................."....................)                                                                                                = 20
+printf("....###_____________"....###_____________)                                                                                                = 20
+puts("_______________________"_______________________
+)                                                                                               = 24
+printf("____________________"____________________)                                                                                                = 20
+printf("____________##......"____________##......)                                                                                                = 20
+printf("...................."....................)                                                                                                = 20
+printf(".........##_________".........##_________)                                                                                                = 20
+puts("_______________________"_______________________
+)                                                                                               = 24
+printf("____________________"____________________)                                                                                                = 20
+printf("________##.........."________##..........)                                                                                                = 20
+printf("...................."....................)                                                                                                = 20
+printf(".............#&_____".............#&_____)                                                                                                = 20
+puts("_______________________"_______________________
+)                                                                                               = 24
+printf("____________________"____________________)                                                                                                = 20
+printf("______#............."______#.............)                                                                                                = 20
+printf("...................."....................)                                                                                                = 20
+printf("................#___"................#___)                                                                                                = 20
+puts("_______________________"_______________________
+)                                                                                               = 24
+printf("____________________"____________________)                                                                                                = 20
+printf("___&#..............."___&#...............)                                                                                                = 20
+printf("...................."....................)                                                                                                = 20
+printf(".......########...#/".......########...#/)                                                                                                = 20
+puts("_______________________"_______________________
+)                                                                                               = 24
+printf("____________________"____________________)                                                                                                = 20
+printf("__#................."__#.................)                                                                                                = 20
+printf("...............#####"...............#####)                                                                                                = 20
+printf("############....##.."############....##..)                                                                                                = 20
+puts("#______________________"#______________________
+)                                                                                               = 24
+printf("____________________"____________________)                                                                                                = 20
+printf("#..................."#...................)                                                                                                = 20
+printf(".......#############".......#############)                                                                                                = 20
+printf("##.........#########"##.........#########)                                                                                                = 20
+puts("..#____________________"..#____________________
+)                                                                                               = 24
+printf("___________________#"___________________#)                                                                                                = 20
+printf("...................."....................)                                                                                                = 20
+printf("..###..#############"..###..#############)                                                                                                = 20
+printf("####################"####################)                                                                                                = 20
+puts("#&.#___________________"#&.#___________________
+)                                                                                               = 24
+printf("__________________#."__________________#.)                                                                                                = 20
+printf("...................#"...................#)                                                                                                = 20
+printf("#....###############"#....###############)                                                                                                = 20
+printf("####################"####################)                                                                                                = 20
+puts("###.#__________________"###.#__________________
+)                                                                                               = 24
+printf("_________________#.."_________________#..)                                                                                                = 20
+printf(".................##.".................##.)                                                                                                = 20
+printf("..##################"..##################)                                                                                                = 20
+printf("##..&###############"##..&###############)                                                                                                = 20
+puts("###&.#_________________"###&.#_________________
+)                                                                                               = 24
+printf("________________#..."________________#...)                                                                                                = 20
+printf("..............##...#"..............##...#)                                                                                                = 20
+printf("####################"####################)                                                                                                = 20
+printf("#######&..##########"#######&..##########)                                                                                                = 20
+puts("####.&#________________"####.&#________________
+)                                                                                               = 24
+printf("________________#..."________________#...)                                                                                                = 20
+printf("..........&#########"..........&#########)                                                                                                = 20
+printf("####################"####################)                                                                                                = 20
+printf("##########..########"##########..########)                                                                                                = 20
+puts("#####.#________________"#####.#________________
+)                                                                                               = 24
+printf("_______________*#..."_______________*#...)                                                                                                = 20
+printf("......&#############"......&#############)                                                                                                = 20
+printf("####################"####################)                                                                                                = 20
+printf("############.#######"############.#######)                                                                                                = 20
+puts("#####.#________________"#####.#________________
+)                                                                                               = 24
+printf("_______________##..."_______________##...)                                                                                                = 20
+printf("...#################"...#################)                                                                                                = 20
+printf("####################"####################)                                                                                                = 20
+printf("############..######"############..######)                                                                                                = 20
+puts("#####.#(_______________"#####.#(_______________
+)                                                                                               = 24
+printf("_______________/#..."_______________/#...)                                                                                                = 20
+printf(".###################".###################)                                                                                                = 20
+printf("#...........########"#...........########)                                                                                                = 20
+printf("#############.######"#############.######)                                                                                                = 20
+puts("#####.#._______________"#####.#._______________
+)                                                                                               = 24
+printf("________________#.&#"________________#.&#)                                                                                                = 20
+printf("################...."################....)                                                                                                = 20
+printf("..............######"..............######)                                                                                                = 20
+printf("############..######"############..######)                                                                                                = 20
+puts("#####.#________________"#####.#________________
+)                                                                                               = 24
+printf("________________#..."________________#...)                                                                                                = 20
+printf(".#############......".#############......)                                                                                                = 20
+printf("..............######"..............######)                                                                                                = 20
+printf("############.&######"############.&######)                                                                                                = 20
+puts("#####.#________________"#####.#________________
+)                                                                                               = 24
+printf("_________________##."_________________##.)                                                                                                = 20
+printf("..#########........."..#########.........)                                                                                                = 20
+printf("..............######"..............######)                                                                                                = 20
+printf("##########.........."##########..........)                                                                                                = 20
+puts("####.#_________________"####.#_________________
+)                                                                                               = 24
+printf("_________________.#."_________________.#.)                                                                                                = 20
+printf("...#######.........."...#######..........)                                                                                                = 20
+printf("..............######"..............######)                                                                                                = 20
+printf("########&..........."########&...........)                                                                                                = 20
+puts("..#.#__________________"..#.#__________________
+)                                                                                               = 24
+printf("___________________#"___________________#)                                                                                                = 20
+printf("......####&........."......####&.........)                                                                                                = 20
+printf(".............#######".............#######)                                                                                                = 20
+printf("####................"####................)                                                                                                = 20
+puts("...#___________________"...#___________________
+)                                                                                               = 24
+printf("____________________"____________________)                                                                                                = 20
+printf("##......####........"##......####........)                                                                                                = 20
+printf("............########"............########)                                                                                                = 20
+printf("...................."....................)                                                                                                = 20
+puts("..#____________________"..#____________________
+)                                                                                               = 24
+printf("____________________"____________________)                                                                                                = 20
+printf("_###.......###......"_###.......###......)                                                                                                = 20
+printf("...........#######.."...........#######..)                                                                                                = 20
+printf("...................#"...................#)                                                                                                = 20
+puts("##_____________________"##_____________________
+)                                                                                               = 24
+printf("____________________"____________________)                                                                                                = 20
+printf("___##..............."___##...............)                                                                                                = 20
+printf(".........#########..".........#########..)                                                                                                = 20
+printf("...#..............##"...#..............##)                                                                                                = 20
+puts("_______________________"_______________________
+)                                                                                               = 24
+printf("____________________"____________________)                                                                                                = 20
+printf("_____##............&"_____##............&)                                                                                                = 20
+printf("##&&################"##&&################)                                                                                                = 20
+printf("##..............##__"##..............##__)                                                                                                = 20
+puts("_______________________"_______________________
+)                                                                                               = 24
+printf("____________________"____________________)                                                                                                = 20
+printf("________##.........."________##..........)                                                                                                = 20
+printf("....################"....################)                                                                                                = 20
+printf(".............##_____".............##_____)                                                                                                = 20
+puts("_______________________"_______________________
+)                                                                                               = 24
+printf("____________________"____________________)                                                                                                = 20
+printf("___________##......."___________##.......)                                                                                                = 20
+printf("....#..##########..."....#..##########...)                                                                                                = 20
+printf("..........##________"..........##________)                                                                                                = 20
+puts("_______________________"_______________________
+)                                                                                               = 24
+printf("____________________"____________________)                                                                                                = 20
+printf("_______________.##.."_______________.##..)                                                                                                = 20
+printf("...................."....................)                                                                                                = 20
+printf(".....##/____________".....##/____________)                                                                                                = 20
+puts("_______________________"_______________________
+)                                                                                               = 24
+printf("____________________"____________________)                                                                                                = 20
+printf("____________________"____________________)                                                                                                = 20
+printf("__######&&...&######"__######&&...&######)                                                                                                = 20
+printf("#___________________"#___________________)                                                                                                = 20
+puts("_______________________"_______________________
+)                                                                                               = 24
+puts("\n----- PREGUNTA PARA INVESTIGAR "...
+----- PREGUNTA PARA INVESTIGAR -----
+)                                                                                  = 38
+printf("%s\n\n", "\302\277Qu\303\251 aplicaciones se pueden ut"...¿Qué aplicaciones se pueden utilizar para ver el tráfico por la red?
+
+)                                                           = 73
+getline(0x7ffe7faf5780, 0x7ffe7faf5778, 0x16d3010, 0x7ffe7faf5778)                                                            = 36
+strcat("echo -n "", "thunder thunder thunder thunderc"...)                                                                    = "echo -n "thunder thunder thunder"...
+popen("echo -n "thunder thunder thunder"..., "r")                                                                             = 0x16d32d0
+fgets("1a48d44bf33b852e4324cac671bab804"..., 33, 0x16d32d0)                                                                   = 0x7ffe7faf5370
+--- SIGCHLD (Child exited) ---
+pclose(0x16d32d0)                                                                                                             = 0
+strcmp("1a48d44bf33b852e4324cac671bab804"..., "1a48d44bf33b852e4324cac671bab804"...)                                          = 0
+printf("\033[1;1H\033[2J"
+)                                                                                                    = 10
+puts("------------- DESAFIO ----------"...------------- DESAFIO -------------
+)                                                                                   = 36
+printf("%s\n\n", "Tango Hotel India Sierra India S"...Tango Hotel India Sierra India Sierra Alfa Whiskey Echo Sierra Oscar Mike Echo
+
+)                                                                       = 80
+puts("\n----- PREGUNTA PARA INVESTIGAR "...
+----- PREGUNTA PARA INVESTIGAR -----
+)                                                                                  = 38
+printf("%s\n\n", "sockets es un mecanismo de IPC. "...sockets es un mecanismo de IPC. ¿Qué es más eficiente entre sockets y pipes?
+
+)                                                                       = 81
+getline(0x7ffe7faf5780, 0x7ffe7faf5778, 0x16d3010, 0x7ffe7faf5778)                                                            = 16
+strcat("echo -n "", "this is awesome")                                                                                        = "echo -n "this is awesome"
+popen("echo -n "this is awesome" | md5s"..., "r")                                                                             = 0x16d32d0
+fgets("88d0feeef1abd8898dcf7915e2de6b44"..., 33, 0x16d32d0)                                                                   = 0x7ffe7faf5370
+--- SIGCHLD (Child exited) ---
+pclose(0x16d32d0)                                                                                                             = 0
+strcmp("88d0feeef1abd8898dcf7915e2de6b44"..., "88d0feeef1abd8898dcf7915e2de6b44"...)                                          = 0
+printf("\033[1;1H\033[2J"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+)                                                                                                    = 10
+puts("------------- DESAFIO ----------"...------------- DESAFIO -------------
+)                                                                                   = 36
+printf("%s\n\n", "quine"quine
+
+)                                                                                                     = 7
+system("gcc quine.c -o quine" <no return ...>
+--- SIGCHLD (Child exited) ---
+<... system resumed> )                                                                                                        = 0
+puts("\302\241Genial!, ya lograron meter un "...¡Genial!, ya lograron meter un programa en quine.c, veamos si hace lo que corresponde.
+)                                                                             = 88
+system("./quine | diff - quine.c" <no return ...>
+--- SIGCHLD (Child exited) ---
+<... system resumed> )                                                                                                        = 0
+puts("La respuesta es chin_chu_lan_cha"...La respuesta es chin_chu_lan_cha
+)                                                                                   = 33
+puts("\n----- PREGUNTA PARA INVESTIGAR "...
+----- PREGUNTA PARA INVESTIGAR -----
+)                                                                                  = 38
+printf("%s\n\n", "\302\277Cu\303\241les son las caracter\303\255stic"...¿Cuáles son las características del protocolo SCTP?
+
+)                                                     = 56
+getline(0x7ffe7faf5780, 0x7ffe7faf5778, 0x16d3010, 0x7ffe7faf5778)                                                            = 17
+strcat("echo -n "", "chin_chu_lan_cha")                                                                                       = "echo -n "chin_chu_lan_cha"
+popen("echo -n "chin_chu_lan_cha" | md5"..., "r")                                                                             = 0x16d32d0
+fgets("c2fb1566098f29ce6b5048fcd6aad77c"..., 33, 0x16d32d0)                                                                   = 0x7ffe7faf5370
+--- SIGCHLD (Child exited) ---
+pclose(0x16d32d0)                                                                                                             = 0
+strcmp("c2fb1566098f29ce6b5048fcd6aad77c"..., "c2fb1566098f29ce6b5048fcd6aad77c"...)                                          = 0
+printf("\033[1;1H\033[2J"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+)                                                                                                    = 10
+puts("------------- DESAFIO ----------"...------------- DESAFIO -------------
+)                                                                                   = 36
+printf("%s\n\n", "b gdbme y encontr\303\241 el valor m\303\241"...b gdbme y encontrá el valor mágico
+
+)                                                           = 38
+puts("ENTER para reintentar."ENTER para reintentar.
+)                                                                                                = 23
+puts("\n----- PREGUNTA PARA INVESTIGAR "...
+----- PREGUNTA PARA INVESTIGAR -----
+)                                                                                  = 38
+printf("%s\n\n", "\302\277Qu\303\251 es un RFC?"¿Qué es un RFC?
+
+)                                                                             = 19
+getline(0x7ffe7faf5780, 0x7ffe7faf5778, 0x16d3010, 0x7ffe7faf5778)                                                            = 10
+strcat("echo -n "", "gdb_manda")                                                                                              = "echo -n "gdb_manda"
+popen("echo -n "gdb_manda" | md5sum | s"..., "r")                                                                             = 0x16d32d0
+fgets("d6159d8c323a7102f9b0a8741513e65b"..., 33, 0x16d32d0)                                                                   = 0x7ffe7faf5370
+--- SIGCHLD (Child exited) ---
+pclose(0x16d32d0)                                                                                                             = 0
+strcmp("d6159d8c323a7102f9b0a8741513e65b"..., "d6159d8c323a7102f9b0a8741513e65b"...)                                          = 0
+printf("\033[1;1H\033[2J"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+)                                                                                                    = 10
+printf("%s\n\n", "Felicitaciones, finalizaron el j"...Felicitaciones, finalizaron el juego. Ahora deberán implementar el servidor que se comporte como el servidor provisto
+
+)                                                                       = 120
+free(0x16d3250)                                                                                                               = <void>
+fclose(0x16d3010)                                                                                                             = 0
+system("echo QUE CURIOSO> /tmp/hidden" <no return ...>
+--- SIGCHLD (Child exited) ---
+<... system resumed> )                                                                                                        = 0
+exit(0 <no return ...>
++++ exited (status 0) +++

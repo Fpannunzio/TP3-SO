@@ -14,7 +14,7 @@
 #define ADDRESS "0.0.0.0"
 #define PORT 8080
 #define STEP_COUNT 11
-#define INIT_CLIENT_MESSAGE_CLIENT 2000
+#define INIT_CLIENT_MESSAGE_SIZE 2000
 
 void freeResources(int sock, int client_sock, FILE * stream, char * client_message);
 void gdbme(void);
@@ -101,7 +101,7 @@ int main(int argc , char *argv[])
     }
 
     
-    client_message_size = INIT_CLIENT_MESSAGE_CLIENT;
+    client_message_size = INIT_CLIENT_MESSAGE_SIZE;
     client_message = (char *)malloc(client_message_size * sizeof(char));
     if(client_message == NULL){
         close(sock);
@@ -143,7 +143,7 @@ int main(int argc , char *argv[])
 
     freeResources(sock, client_sock, stream, client_message);
 
-    //system("echo QUE CURIOSO> /tmp/hidden" <no return ...> ???
+    //system("echo QUE CURIOSO> /tmp/hidden" <no return ...> ??? Que onda este easter egg
 
     return 0;
 }
@@ -265,7 +265,7 @@ void step3(void){
 
 // Falta que strings tenga el too easy
 void step4(void){
-    printf("respuesta = strings:377\n\n");
+    printf("respuesta = strings:56\n\n");
     puts("\n----- PREGUNTA PARA INVESTIGAR -----");
     printf("\302\277C\303\263mo garantiza TCP que los paquetes llegan en orden y no se pierden?\n\n");        
 }
@@ -307,7 +307,6 @@ void step9(void){
     printf("\302\277Cu\303\241les son las caracter\303\255sticas del protocolo SCTP?\n\n");       
 }
 
-// Falta testearlo
 void step10(void){
     printf("b gdbme y encontr\303\241 el valor m\303\241gico\n\n");
 
@@ -492,14 +491,3 @@ void printLogo(void){
     printf("#___________________");
     puts("_______________________");
 }
-
-
-
-
-
-
-
-
-
-
-

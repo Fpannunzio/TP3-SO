@@ -98,7 +98,7 @@ int main(int argc, char const *argv[])
 		return 1;
 	}
 
-		if(send(sock , ANS_11 , strlen(ANS_11), 0) < 0){
+	if(send(sock , ANS_11 , strlen(ANS_11), 0) < 0){
 		puts("Send 11 failed");
 		return 1;
 	}

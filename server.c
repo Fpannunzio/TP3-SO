@@ -181,7 +181,8 @@ void quineCheck(void){
     // Nos fijamos que diff haya devuelto 0, es decir, que quine.c y su stdout sean iguales
     gccReturnValue = pclose(popenStream);
     if(gccReturnValue == -1 || !WIFEXITED(gccReturnValue) || WEXITSTATUS(gccReturnValue)){
-        printf("\nENTER para reintentar.\n");
+        printf("\ndiff encontr\303\263 diferencias.\n");
+        printf("ENTER para reintentar.\n");
         return;
     }
     

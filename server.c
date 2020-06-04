@@ -228,7 +228,7 @@ void printStream(FILE * stream){
 }
 
 void gdbme(void){
-    size_t aux = 0;
+    int aux = 0;
     if(aux == 0x12345678)
         printf("La respuesta es gdb_manda \n");
     else
@@ -283,20 +283,20 @@ void step6(void){
     printMixedFdsStep6();
 
     puts("\n----- PREGUNTA PARA INVESTIGAR -----");
-    printf("\302\277C\303\263mo se puede implementar un servidor que atienda muchas conexiones sin usar procesos ni threads?");        
+    printf("\302\277C\303\263mo se puede implementar un servidor que atienda muchas conexiones sin usar procesos ni threads?\n\n");        
 }
 
 void step7(void){
     printf("Logo\n\n");
     printLogo();
     puts("\n----- PREGUNTA PARA INVESTIGAR -----");
-    printf("\302\277Qu\303\251 aplicaciones se pueden utilizar para ver el tr\303\241fico por la red?"); 
+    printf("\302\277Qu\303\251 aplicaciones se pueden utilizar para ver el tr\303\241fico por la red?\n\n"); 
 }
 
 void step8(void){
     printf("Tango Hotel India Sierra India Sierra Alfa Whiskey Echo Sierra Oscar Mike Echo\n\n");
     puts("\n----- PREGUNTA PARA INVESTIGAR -----");
-    printf("sockets es un mecanismo de IPC. \302\277Qu\303\251 es m\303\241s eficiente entre sockets y pipes?");
+    printf("sockets es un mecanismo de IPC. \302\277Qu\303\251 es m\303\241s eficiente entre sockets y pipes?\n\n");
 }
 
 void step9(void){
@@ -305,7 +305,7 @@ void step9(void){
     quineCheck();
 
     puts("\n----- PREGUNTA PARA INVESTIGAR -----");
-    printf("%s\n\n", "\302\277Cu\303\241les son las caracter\303\255sticas del protocolo SCTP?");       
+    printf("\302\277Cu\303\241les son las caracter\303\255sticas del protocolo SCTP?\n\n");       
 }
 
 // Falta testearlo

@@ -236,7 +236,7 @@ void gdbme(void){
 }
 
 void step0(void){
-    printf("Bienvenidos al TP3 y felicitaciones, ya resolvieron el primer acertijo.\nEn este TP deber\303\241n finalizar el juego que ya comenzaron resolviendo los desaf\303\255os de cada nivel.\nAdem\303\241s tendr\303\241n que investigar otras preguntas para responder durante la defensa.\nEl desaf\303\255o final consiste en crear un programa que se comporte igual que yo, es decir, que provea los mismos desaf\303\255os y que sea necesario hacer lo mismo para resolverlos. No basta con esperar la respuesta.\nAdem\303\241s, deber\303\241n implementar otro programa para comunicarse conmigo.\n\nDeber\303\241n estar atentos a los easter eggs.\n\nPara verificar que sus respuestas tienen el formato correcto respondan a este desaf\303\255o con la palabra 'entendido\\n'\n\n");
+    printf("Bienvenidos al TP3 y felicitaciones, ya resolvieron el primer acertijo.\n\nEn este TP deber\303\241n finalizar el juego que ya comenzaron resolviendo los desaf\303\255os de cada nivel.\nAdem\303\241s tendr\303\241n que investigar otras preguntas para responder durante la defensa.\nEl desaf\303\255o final consiste en crear un programa que se comporte igual que yo, es decir, que provea los mismos desaf\303\255os y que sea necesario hacer lo mismo para resolverlos. No basta con esperar la respuesta.\nAdem\303\241s, deber\303\241n implementar otro programa para comunicarse conmigo.\n\nDeber\303\241n estar atentos a los easter eggs.\n\nPara verificar que sus respuestas tienen el formato correcto respondan a este desaf\303\255o con la palabra 'entendido\\n'\n\n");
     puts("\n----- PREGUNTA PARA INVESTIGAR -----");
     printf("\302\277C\303\263mo descubrieron el protocolo, la direcci\303\263n y el puerto para conectarse?\n\n");                                          
 }
@@ -271,7 +271,6 @@ void step4(void){
 }
 
 void step5(void){
-    // Falta agregar la seccion .RUN_ME
     printf(".data .bss .comment ? .shstrtab .symtab .strtab\n\n");                                                                     
     puts("\n----- PREGUNTA PARA INVESTIGAR -----");                                                                     
     printf("Un servidor suele crear un nuevo proceso o thread para atender las conexiones entrantes. \302\277Qu\303\251 conviene m\303\241s?\n\n");

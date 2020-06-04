@@ -12,6 +12,10 @@ all: $(SERVER) $(CLIENT)
 
 $(SERVER): $(SOURCES_SERVER)
 	$(CC) $(CFLAGS) $^ -o $@
+	touch run_me.o
+	objcopy --add-section .RUN_ME=run_me.o $(SERVER) $(SERVER)
+	rm run_me.o
+
 
 $(CLIENT): $(SOURCES_CLIENT)
 	$(CC) $(CFLAGS) $^ -o $@

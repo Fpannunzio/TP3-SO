@@ -15,8 +15,12 @@
 #define STEP_COUNT 11
 #define INIT_CLIENT_MESSAGE_CLIENT 2000
 
-void freeResources(int sock, /*client_sock,*/ FILE * stream, char * client_message);
+void freeResources(int sock, int client_sock, FILE * stream, char * client_message);
 void gdbme(void);
+void quineCheck(void);
+void printStream(FILE * stream);
+void printLogo(void);
+
 void step0(void);
 void step1(void);
 void step2(void);
@@ -28,8 +32,7 @@ void step7(void);
 void step8(void);
 void step9(void);
 void step10(void);
-void gdbme(void);
-void printLogo(void);
+
 
 int main(int argc , char *argv[])
 {
@@ -90,7 +93,7 @@ int main(int argc , char *argv[])
     stream = fdopen(client_sock, "r");
     if(stream == NULL){
         close(sock);
-        //close(client_sock);
+        close(client_sock);
         perror("fdopen");
         exit(1);
     }
@@ -100,42 +103,107 @@ int main(int argc , char *argv[])
     client_message = (char *)malloc(client_message_size * sizeof(char));
     if(client_message == NULL){
         close(sock);
-        //close(client_sock);
+        close(client_sock);
         fclose(stream);
         perror("malloc");
         exit(1);
     }
 
-    //for(int i = 0; i < 1000000000; i++);
-
+    int wrongAnsFlag;
     for(size_t i = 0; i < STEP_COUNT; i++){
+
+        wrongAnsFlag = 0;
         do{
 
+            if(wrongAnsFlag){
+                printf("Respuesta incorrecta: %s\n", client_message);
+                sleep(2);
+            }
+
             printf("\033[1;1H\033[2J"); //Clear screen
-            puts("------------- DESAFIO -------------\n");
+            puts("------------- DESAFIO -------------");
 
             steps[i]();
 
             if(getline(&client_message, &client_message_size, stream) == -1){
-                freeResources(sock, /*client_sock,*/ stream, client_message);
+                freeResources(sock, client_sock, stream, client_message);
                 perror("getline");
                 exit(1);
             }
 
+            wrongAnsFlag = 1;
+
         } while(strcmp(client_message, stepAns[i]));
     }
 
+    printf("\033[1;1H\033[2J"); //Clear screen
     printf("Felicitaciones, finalizaron el juego. Ahora deberan implementar el servidor que se comporte como el servidor provisto\n\n");
-    freeResources(sock, /*client_sock,*/ stream, client_message);
+
+    freeResources(sock, client_sock, stream, client_message);
 
     //system("echo QUE CURIOSO> /tmp/hidden" <no return ...> ???
+
+    return 0;
 }
 
-void freeResources(int sock, /*int client_sock,*/ FILE * stream, char * client_message){
+void freeResources(int sock, int client_sock, FILE * stream, char * client_message){
     close(sock);
-    //close(client_sock);
+    close(client_sock);
     fclose(stream);
     free(client_message);
+}
+
+void quineCheck(void){
+
+    FILE * popenStream;
+    if((popenStream = popen("gcc quine.c -o quine", "r")) == NULL){
+        perror("popen");
+        exit(1);
+    }
+
+    // Nos fijamos que gcc haya devuelto 0, es decir, que haya podido compilar quine.c
+    int gccReturnValue = pclose(popenStream);
+    if(gccReturnValue == -1 || !WIFEXITED(gccReturnValue) || WEXITSTATUS(gccReturnValue)){
+        printf("\nENTER para reintentar.\n");
+        return;
+    }
+
+    puts("\302\241Genial!, ya lograron meter un programa en quine.c, veamos si hace lo que corresponde.");
+
+    if((popenStream = popen("./quine | diff - quine.c", "r")) == NULL){
+        perror("popen");
+        exit(1);
+    }
+
+    // Imprimimos salida de diff
+    printStream(popenStream);
+    
+    // Nos fijamos que diff haya devuelto 0, es decir, que quine.c y su stdout sean iguales
+    gccReturnValue = pclose(popenStream);
+    if(gccReturnValue == -1 || !WIFEXITED(gccReturnValue) || WEXITSTATUS(gccReturnValue)){
+        printf("\nENTER para reintentar.\n");
+        return;
+    }
+    
+    puts("La respuesta es chin_chu_lan_cha"); 
+}
+
+void printStream(FILE * stream){
+    char buffer[200];
+    int len;
+
+    do{
+        len = fread(buffer, sizeof(char), 200 - 1, stream);
+
+        if(ferror(stream)){
+            perror("fread");
+            exit(1);
+        }
+        buffer[len] = 0;
+
+        printf("%s", buffer);
+
+    } while(!feof(stream));
 }
 
 void gdbme(void){
@@ -164,6 +232,7 @@ void step2(void){
     printf("\302\277El puerto que usaron para conectarse al server es el mismo que usan para mandar las respuestas? \302\277Por qu\303\251?\n\n");
 }
 
+// Falta hacer los writes alternantes
 void step3(void){
     printf("EBADF...\n\n");
 
@@ -209,40 +278,21 @@ void step8(void){
     
 }
 
-// Hay que probar exhaustivamente, y capaz imprimir las salidas de los popen
 void step9(void){
-    printf("quine\n");
+    printf("quine\n\n");
+
+    quineCheck();
+
     puts("\n----- PREGUNTA PARA INVESTIGAR -----");
-    printf("%s\n\n", "\302\277Cu\303\241les son las caracter\303\255sticas del protocolo SCTP?"); 
-
-    FILE * popenStream;
-    if((popenStream = popen("gcc quine.c -o quine", "r")) == NULL)
-        return;
-
-    // Nos fijamos que gcc haya devuelto 0, es decir, que haya podido compilar quine.c
-    int gccReturnValue = pclose(popenStream);
-    if(gccReturnValue == -1 || !WIFEXITED(gccReturnValue) || !WEXITSTATUS(gccReturnValue))
-        return;
-
-
-    puts("\302\241Genial!, ya lograron meter un programa en quine.c, veamos si hace lo que corresponde.");
-
-
-    if((popenStream = popen("./quine | diff - quine.c", "r")) == NULL)
-        return;
-
-    // Nos fijamos que diff haya devuelto 0, es decir, que quine.c y su stdout sean iguales
-    gccReturnValue = pclose(popenStream);
-    if(gccReturnValue == -1 || !WIFEXITED(gccReturnValue) || !WEXITSTATUS(gccReturnValue))
-        return;
-
-    
-    puts("La respuesta es chin_chu_lan_cha");          
+    printf("%s\n\n", "\302\277Cu\303\241les son las caracter\303\255sticas del protocolo SCTP?");       
 }
 
+// Falta testearlo
 void step10(void){
     printf("b gdbme y encontr\303\241 el valor m\303\241gico\n\n");
+
     gdbme();
+
     puts("\n----- PREGUNTA PARA INVESTIGAR -----");
     printf("\302\277Qu\303\251 es un RFC?\n\n");
 }

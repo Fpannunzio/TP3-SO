@@ -27,9 +27,6 @@ int main(int argc, char const *argv[])
 {
     int sock;
 	struct sockaddr_in server;
-	// char message[2000];
-	// char server_reply[2000];
-	// size_t replyLen = 0;
 	
 	//Create socket
 	sock = socket(AF_INET , SOCK_STREAM , IPPROTO_IP);
